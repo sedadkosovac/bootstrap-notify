@@ -19,8 +19,7 @@
         "notice"
     ],
     "dependencies": {
-        "jquery": ">=1.10.2",
-        "bootstrap": ">=2.0.0"
+        "jquery": ">=1.10.2"
     },
     "license": "MIT",
     "ignore": []
