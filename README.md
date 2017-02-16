@@ -10,24 +10,22 @@ Add to ember-cli-build.js
   app.import('bower_components/no-bootstrap-notify/bootstrap-notify.js');
 
 In you services folder add notification.js
-
 import Ember from 'ember';
-
 export default Ember.Service.extend({
-  notify(title, message, type) {
-    Ember.$.notify({
-      title: `<strong>${title}</strong>`,
-      message: message,
-      type: type
-    },{
-      animate: {
+   notify(title, message, type) {
+   Ember.$.notify({
+   title: `<strong>${title}</strong>`,
+   message: message,
+   type: type
+   },{
+   animate: {
         enter: 'animated fadeInRight',
         exit: 'animated fadeOutRight'
-      },
-      template: '<div>Your Markup goes here</div>' 
-    });
-  }
-});
+        },
+        template: '<div>Your Markup goes here</div>' 
+        });
+     }
+  });
 
 and then when you want to use it you import it and call notify 
   notification: Ember.inject.service(),
